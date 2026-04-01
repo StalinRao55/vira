@@ -1,0 +1,697 @@
+{
+  "sessions": {
+    "75bbfc03-87b2-4e07-b23a-7c756a52b0aa": {
+      "id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "title": "Summarize AI workstation features",
+      "created_at": "2026-03-31T15:57:23.908904",
+      "updated_at": "2026-03-31T16:20:58.901663",
+      "history": [
+        {
+          "role": "user",
+          "content": "Summarize AI workstation features",
+          "timestamp": "2026-03-31T15:57:23.932566",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: Summarize AI workstation features\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Summarize AI workstation features\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T15:57:23.935381",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        },
+        {
+          "role": "user",
+          "content": "hlo'",
+          "timestamp": "2026-03-31T16:20:58.895785",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo'\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Summarize AI workstation features | hlo'\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:20:58.901663",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        }
+      ],
+      "summary": "Summarize AI workstation features | hlo'",
+      "preferences": {
+        "theme": "dark",
+        "response_style": "balanced",
+        "persona": "professional",
+        "temperature": 0.7,
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "wide_mode": true,
+        "distraction_free": false,
+        "show_sources": true,
+        "privacy_mode": false,
+        "model": "smart"
+      },
+      "folder_id": "general",
+      "branch_of": null,
+      "version": 1,
+      "token_estimate": 192
+    },
+    "live-test": {
+      "id": "live-test",
+      "title": "Say hello in one sentence.",
+      "created_at": "2026-03-31T16:28:25.852622",
+      "updated_at": "2026-03-31T16:45:38.875064",
+      "history": [
+        {
+          "role": "user",
+          "content": "Say hello in one sentence.",
+          "timestamp": "2026-03-31T16:28:25.865163",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "Say hello in one sentence.",
+          "timestamp": "2026-03-31T16:30:54.234043",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "hlo",
+          "timestamp": "2026-03-31T16:34:43.170527",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Say hello in one sentence. | Say hello in one sentence. | hlo\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:34:52.201129",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        },
+        {
+          "role": "user",
+          "content": "hlo",
+          "timestamp": "2026-03-31T16:45:18.733777",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Say hello in one sentence. | hlo | hlo\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:45:27.756113",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        },
+        {
+          "role": "user",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Say hello in one sentence. | Say hello in one sentence. | hlo\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:45:29.858200",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: Say hello in one sentence. | Say hello in one sentence. | hlo\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: hlo | hlo | VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professio\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:45:38.875064",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        }
+      ],
+      "summary": "hlo | hlo | VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hlo\n\nPreferred style: balanced. Persona: professio",
+      "preferences": {
+        "theme": "dark",
+        "response_style": "balanced",
+        "persona": "professional",
+        "temperature": 0.7,
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "wide_mode": true,
+        "distraction_free": false,
+        "show_sources": true,
+        "privacy_mode": false,
+        "model": "smart"
+      },
+      "folder_id": "general",
+      "branch_of": null,
+      "version": 1,
+      "token_estimate": 505
+    },
+    "why-fallback": {
+      "id": "why-fallback",
+      "title": "hello",
+      "created_at": "2026-03-31T16:50:59.749128",
+      "updated_at": "2026-04-01T14:30:13.420348",
+      "history": [
+        {
+          "role": "user",
+          "content": "hello",
+          "timestamp": "2026-03-31T16:50:59.758608",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA fallback mode is active because the LLM provider is unavailable.\n\nI still understood your request about: hello\n\nPreferred style: balanced. Persona: professional.\n\nConversation memory summary: hello\n\nAdd a valid `GEMINI_API_KEY` to restore full Gemini-powered responses, streaming-quality output, and richer reasoning.",
+          "timestamp": "2026-03-31T16:51:08.777051",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        },
+        {
+          "role": "user",
+          "content": "Refactor the following code for readability, maintainability, and performance. Explain tradeoffs.",
+          "timestamp": "2026-04-01T14:29:18.895375",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA is running in limited mode, but I can still help with: Refactor the following code for readability, maintainability, and performance. Explain tradeoffs.\n\nRecent conversation context: hello | Refactor the following code for readability, maintainability, and performance. Explain tradeoffs.",
+          "timestamp": "2026-04-01T14:29:27.911374",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        },
+        {
+          "role": "user",
+          "content": "give me medicine for cough",
+          "timestamp": "2026-04-01T14:30:04.394692",
+          "metadata": {
+            "privacy_mode": false
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "VIRA is running in limited mode, but I can still help with: give me medicine for cough\n\nRecent conversation context: hello | Refactor the following code for readability, maintainability, and performance. Explain tradeoffs. | give me medicine for cough",
+          "timestamp": "2026-04-01T14:30:13.420348",
+          "metadata": {
+            "rag_enabled": false,
+            "agents_enabled": false,
+            "streaming_enabled": true,
+            "sources": [],
+            "model": "smart"
+          }
+        }
+      ],
+      "summary": "hello | Refactor the following code for readability, maintainability, and performance. Explain tradeoffs. | give me medicine for cough",
+      "preferences": {
+        "theme": "dark",
+        "response_style": "balanced",
+        "persona": "professional",
+        "temperature": 0.7,
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "wide_mode": true,
+        "distraction_free": false,
+        "show_sources": true,
+        "privacy_mode": false,
+        "model": "smart"
+      },
+      "folder_id": "general",
+      "branch_of": null,
+      "version": 1,
+      "token_estimate": 246
+    },
+    "debug-session": {
+      "id": "debug-session",
+      "title": "New chat",
+      "created_at": "2026-04-01T14:33:14.334339",
+      "updated_at": "2026-04-01T15:24:23.879982",
+      "history": [],
+      "summary": "",
+      "preferences": {
+        "theme": "dark",
+        "response_style": "balanced",
+        "persona": "professional",
+        "temperature": 0.3,
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "wide_mode": true,
+        "distraction_free": false,
+        "show_sources": true,
+        "privacy_mode": true,
+        "model": "smart"
+      },
+      "folder_id": "general",
+      "branch_of": null,
+      "version": 1,
+      "token_estimate": 0
+    }
+  },
+  "folders": {
+    "general": {
+      "id": "general",
+      "name": "General",
+      "created_at": "2026-03-31T15:57:23.806715",
+      "updated_at": "2026-03-31T15:57:23.806715"
+    }
+  },
+  "prompt_library": [
+    {
+      "id": "refactor",
+      "name": "/refactor",
+      "content": "Refactor the following code for readability, maintainability, and performance. Explain tradeoffs.",
+      "scope": "global"
+    },
+    {
+      "id": "brief",
+      "name": "/brief",
+      "content": "Summarize this as an executive brief with key risks, actions, and next steps.",
+      "scope": "global"
+    },
+    {
+      "id": "debug",
+      "name": "/debug",
+      "content": "Diagnose the bug, list likely root causes, and propose the fastest safe fix.",
+      "scope": "global"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "76226994-9450-4cbe-84e5-eb2ed4534258",
+      "title": "Daily Brief",
+      "prompt": "Summarize the latest AI news",
+      "cron_label": "Every day at 9 AM",
+      "created_at": "2026-03-31T15:57:23.970130",
+      "last_run_at": null,
+      "status": "scheduled"
+    }
+  ],
+  "shares": {
+    "c1164283": {
+      "id": "c1164283",
+      "session_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "mode": "view",
+      "created_at": "2026-03-31T15:57:23.950459",
+      "title": "Summarize AI workstation features"
+    }
+  },
+  "audit_logs": [
+    {
+      "timestamp": "2026-03-31T15:57:23.913318",
+      "action": "create",
+      "entity_type": "session",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "title": "Workstation Demo",
+        "folder_id": "general"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T15:57:23.929819",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T15:57:23.953310",
+      "action": "share",
+      "entity_type": "session",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "share_id": "c1164283",
+        "mode": "view"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T15:57:23.972592",
+      "action": "create",
+      "entity_type": "schedule",
+      "entity_id": "76226994-9450-4cbe-84e5-eb2ed4534258",
+      "details": {
+        "title": "Daily Brief",
+        "cron_label": "Every day at 9 AM"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:20:46.985103",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "use_agents": true
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:20:47.944396",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "use_agents": false
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:20:56.803247",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "75bbfc03-87b2-4e07-b23a-7c756a52b0aa",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:28:25.861343",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "live-test",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:30:54.231235",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "live-test",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:34:41.106848",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "live-test",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:45:16.665427",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "live-test",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:45:27.784234",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "live-test",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-03-31T16:50:59.755403",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "why-fallback",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:29:16.797814",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "why-fallback",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:30:02.337937",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "why-fallback",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.7,
+        "privacy_mode": false,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:33:14.342377",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:40:15.998383",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:41:46.512693",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:55:54.118584",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T14:56:05.223089",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T15:22:24.741323",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T15:22:45.684686",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    },
+    {
+      "timestamp": "2026-04-01T15:24:24.010347",
+      "action": "update",
+      "entity_type": "preferences",
+      "entity_id": "debug-session",
+      "details": {
+        "use_rag": false,
+        "use_agents": false,
+        "voice_enabled": false,
+        "streaming_enabled": true,
+        "temperature": 0.3,
+        "privacy_mode": true,
+        "persona": "professional",
+        "response_style": "balanced",
+        "model": "smart"
+      }
+    }
+  ],
+  "analytics": {
+    "total_messages": 18,
+    "user_messages": 10,
+    "assistant_messages": 8,
+    "agent_runs": 0,
+    "documents_uploaded": 0,
+    "shared_threads": 1,
+    "scheduled_tasks": 1,
+    "last_activity": "2026-04-01T14:30:13.420348"
+  }
+}

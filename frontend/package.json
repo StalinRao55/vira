@@ -1,0 +1,9 @@
+{
+  "name": "vira-ai-frontend",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 3001",
+    "dev": "python -m http.server 3001"
+  }
+}

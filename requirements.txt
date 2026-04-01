@@ -1,0 +1,31 @@
+# Core Backend Requirements
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-dotenv==1.1.1
+
+# LLM and AI
+google-genai==1.30.0
+numpy==2.2.4
+sentence-transformers==4.1.0
+
+# Document Processing
+PyPDF2==3.0.1
+python-docx==1.1.2
+beautifulsoup4==4.12.3
+
+# Agent System and Tools
+requests==2.32.0
+
+# Voice Processing
+pyttsx3==2.91
+
+# Database
+motor==3.7.0
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+
+# Frontend Dependencies
+# React will be handled separately

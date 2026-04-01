@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+python-multipart
+numpy
+PyPDF2
+python-docx
+beautifulsoup4
+sentence-transformers
+pyttsx3
+motor
+google-genai
