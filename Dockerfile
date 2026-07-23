@@ -3,6 +3,7 @@ WORKDIR /app/frontend
 COPY frontend/package*.json ./
 RUN npm install --no-audit --no-fund
 COPY frontend ./
+RUN mkdir -p public
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_API_URL=/api/v1
 RUN npm run build
