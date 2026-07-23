@@ -151,7 +151,7 @@ async def get_current_user(
 async def require_admin(current_user: Annotated[User, Depends(get_current_user)]) -> User:
     """RBAC guard for admin-only routes (used by the analytics dashboard in
     Phase 11)."""
-    if current_user.role.value != "admin":
+    if current_user.role.value != "ADMIN":
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Admin access required")
     return current_user
 

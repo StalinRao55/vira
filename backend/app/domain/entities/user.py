@@ -20,8 +20,8 @@ from uuid import UUID, uuid4
 
 
 class UserRole(str, Enum):
-    USER = "user"
-    ADMIN = "admin"
+    USER = "USER"
+    ADMIN = "ADMIN"
 
 
 @dataclass

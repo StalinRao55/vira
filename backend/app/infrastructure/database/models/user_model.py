@@ -24,8 +24,8 @@ from app.infrastructure.database.base import Base
 
 
 class UserRoleEnum(str, enum.Enum):
-    USER = "user"
-    ADMIN = "admin"
+    USER = "USER"
+    ADMIN = "ADMIN"
 
 
 class UserModel(Base):
