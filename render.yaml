@@ -2,38 +2,55 @@ services:
   - type: web
     name: vira-backend
     runtime: python
-    buildCommand: cd backend && pip install -e .
-    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -e .
+    preDeployCommand: alembic upgrade head
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
     envVars:
       - key: ENVIRONMENT
         value: production
-      - key: JWT_SECRET_KEY
+      - key: DATABASE_URL
         fromDatabase:
-          name: vira_postgres
-          property: password
+          name: vira-postgres
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          name: vira-redis
+          type: keyvalue
+          property: connectionString
+      - key: JWT_SECRET_KEY
+        generateValue: true
       - key: GEMINI_API_KEY
-        value: ""  # Add your API key in Render environment
+        sync: false
       - key: GOOGLE_CLIENT_ID
-        value: ""  # Add your credentials in Render environment
+        sync: false
       - key: GOOGLE_CLIENT_SECRET
-        value: ""  # Add your credentials in Render environment
+        sync: false
+      - key: GOOGLE_REDIRECT_URI
+        value: https://vira-backend.onrender.com/auth/callback/google
       - key: FRONTEND_URL
-        value: https://your-frontend-domain.vercel.app
+        value: https://vira-frontend.onrender.com
 
   - type: web
     name: vira-frontend
     runtime: node
-    buildCommand: cd frontend && npm install && npm run build
-    startCommand: cd frontend && npm start
+    plan: free
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    startCommand: npm start -- -p $PORT
     envVars:
       - key: NEXT_PUBLIC_API_URL
         value: https://vira-backend.onrender.com/api/v1
 
+  - type: keyvalue
+    name: vira-redis
+    plan: free
+    ipAllowList: []
+
 databases:
-  - name: vira_postgres
+  - name: vira-postgres
     databaseName: vira
     user: vira
-    plan: free
-
-  - name: vira_redis
     plan: free
