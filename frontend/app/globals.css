@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #14151a;
+  --color-surface: #1c1e26;
+  --color-surface-raised: #24262f;
+  --color-border: #2e303b;
+  --color-text: #e7e6e2;
+  --color-text-muted: #9a9a95;
+  --color-accent: #7c9885;
+  --color-accent-hover: #8fab98;
+  --color-highlight: #c9a227;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+/* Visible keyboard focus everywhere, per accessibility requirements */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

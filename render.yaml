@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: vira-backend
+    runtime: python
+    buildCommand: cd backend && pip install -e .
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: JWT_SECRET_KEY
+        fromDatabase:
+          name: vira_postgres
+          property: password
+      - key: GEMINI_API_KEY
+        value: ""  # Add your API key in Render environment
+      - key: GOOGLE_CLIENT_ID
+        value: ""  # Add your credentials in Render environment
+      - key: GOOGLE_CLIENT_SECRET
+        value: ""  # Add your credentials in Render environment
+      - key: FRONTEND_URL
+        value: https://your-frontend-domain.vercel.app
+
+  - type: web
+    name: vira-frontend
+    runtime: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://vira-backend.onrender.com/api/v1
+
+databases:
+  - name: vira_postgres
+    databaseName: vira
+    user: vira
+    plan: free
+
+  - name: vira_redis
+    plan: free
