@@ -36,7 +36,7 @@ class TitleGenerationService:
                 chunk.text
                 async for chunk in self._llm_provider.stream_completion(
                     messages=[ChatTurn(role="user", content=prompt)],
-                    model="gemini-3-flash",
+                    model="gemini-2.0-flash",
                     temperature=0.3,
                 )
             ]

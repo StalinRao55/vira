@@ -13,6 +13,8 @@ How it communicates with other modules:
 """
 
 import logging
+from contextlib import asynccontextmanager
+from typing import AsyncGenerator
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,10 +23,19 @@ from app.api.v1.routers import agents, analytics, auth, conversations, documents
 from app.api.middleware.request_tracing import RequestTracingMiddleware
 from app.core.logging_config import configure_logging
 from app.core.config import settings
+from app.infrastructure.database.base import init_db
 
 configure_logging(settings.environment)
 
-app = FastAPI(title="VIRA API", version="0.1.0")
+
+@asynccontextmanager
+async def lifespan(app_: object) -> AsyncGenerator[None, None]:
+    """Run startup tasks (DB table creation for SQLite dev) then yield."""
+    await init_db()
+    yield
+
+
+app = FastAPI(title="VIRA API", version="0.1.0", lifespan=lifespan)
 
 app.add_middleware(RequestTracingMiddleware)
 app.add_middleware(

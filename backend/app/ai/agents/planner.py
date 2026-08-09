@@ -51,7 +51,7 @@ class PlannerAgent(IAgent):
             chunks = [
                 chunk.text
                 async for chunk in self._llm_provider.stream_completion(
-                    messages=[ChatTurn(role="user", content=prompt)], model="gemini-3-flash", temperature=0.0
+                    messages=[ChatTurn(role="user", content=prompt)], model="gemini-2.0-flash", temperature=0.0
                 )
             ]
             raw = "".join(chunks).strip()

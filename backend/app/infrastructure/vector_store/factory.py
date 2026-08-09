@@ -16,19 +16,17 @@ How it communicates with other modules:
 
 from functools import lru_cache
 
-from app.core.config import settings
+from app.ai.embeddings.factory import get_embedding_provider
 from app.infrastructure.vector_store.base import IVectorStore
 from app.infrastructure.vector_store.faiss_vector_store import FaissVectorStore
-
-_GEMINI_EMBEDDING_DIMENSIONS = 768
-_MOCK_EMBEDDING_DIMENSIONS = 32
 
 
 @lru_cache
 def get_vector_store() -> IVectorStore:
-    """Cached (singleton) for the lifetime of the process. Dimensions must
-    match whatever embedding provider factory.py selects — see the
-    dimensions property on IEmbeddingProvider as the source of truth in a
-    future refactor; hardcoded here for clarity at this stage."""
-    dimensions = _MOCK_EMBEDDING_DIMENSIONS if settings.environment == "test" else _GEMINI_EMBEDDING_DIMENSIONS
+    """Cached (singleton) for the lifetime of the process. Dimensions are
+    taken from whatever embedding provider factory.py actually selected
+    (gemini → 768, mock → 32), so the FAISS index always matches the
+    vectors it stores."""
+    embedding_provider = get_embedding_provider()
+    dimensions = embedding_provider.dimensions
     return FaissVectorStore(dimensions=dimensions)

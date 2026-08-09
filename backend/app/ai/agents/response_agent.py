@@ -27,7 +27,7 @@ class ResponseAgent(IAgent):
     async def run(self, context: AgentContext):
         raise NotImplementedError("ResponseAgent streams — use stream() instead of run()")
 
-    async def stream(self, context: AgentContext, model: str = "gemini-3-flash") -> AsyncIterator[StreamChunk]:
+    async def stream(self, context: AgentContext, model: str = "gemini-2.0-flash") -> AsyncIterator[StreamChunk]:
         messages = list(context.history)
 
         if context.accumulated_context:

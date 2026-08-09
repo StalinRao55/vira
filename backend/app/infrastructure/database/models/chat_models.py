@@ -17,7 +17,7 @@ import uuid
 from datetime import datetime
 
 from sqlalchemy import Boolean, Enum, ForeignKey, Integer, String, Text, func
-from sqlalchemy.dialects.postgresql import UUID as PGUUID
+from sqlalchemy import Uuid
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.infrastructure.database.base import Base
@@ -33,8 +33,8 @@ class MessageRoleEnum(str, enum.Enum):
 class ConversationModel(Base):
     __tablename__ = "conversations"
 
-    id: Mapped[uuid.UUID] = mapped_column(PGUUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(PGUUID(as_uuid=True), ForeignKey("users.id"), index=True, nullable=False)
+    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), ForeignKey("users.id"), index=True, nullable=False)
     title: Mapped[str] = mapped_column(String(255), default="New conversation", nullable=False)
     is_archived: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     is_pinned: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
@@ -48,9 +48,9 @@ class ConversationModel(Base):
 class MessageModel(Base):
     __tablename__ = "messages"
 
-    id: Mapped[uuid.UUID] = mapped_column(PGUUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
     conversation_id: Mapped[uuid.UUID] = mapped_column(
-        PGUUID(as_uuid=True), ForeignKey("conversations.id"), index=True, nullable=False
+        Uuid(as_uuid=True), ForeignKey("conversations.id"), index=True, nullable=False
     )
     role: Mapped[MessageRoleEnum] = mapped_column(Enum(MessageRoleEnum), nullable=False)
     content: Mapped[str] = mapped_column(Text, nullable=False)
@@ -59,7 +59,7 @@ class MessageModel(Base):
     token_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
     is_edited: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     parent_message_id: Mapped[uuid.UUID | None] = mapped_column(
-        PGUUID(as_uuid=True), ForeignKey("messages.id"), nullable=True
+        Uuid(as_uuid=True), ForeignKey("messages.id"), nullable=True
     )
     created_at: Mapped[datetime] = mapped_column(server_default=func.now(), index=True, nullable=False)
 

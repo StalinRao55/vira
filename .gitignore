@@ -15,3 +15,7 @@ coverage/
 
 nginx/certs/
 backend/storage/
+
+# Local SQLite dev database
+*.db
+*.sqlite3

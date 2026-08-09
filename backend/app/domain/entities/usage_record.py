@@ -14,7 +14,7 @@ from uuid import UUID, uuid4
 # Rough per-1K-token USD pricing for cost estimation DISPLAY purposes only —
 # NOT used for billing. Update as providers change pricing.
 _PRICING_PER_1K_TOKENS = {
-    "gemini-3-flash": {"prompt": 0.00015, "completion": 0.0006},
+    "gemini-2.0-flash": {"prompt": 0.00015, "completion": 0.0006},
     "mock": {"prompt": 0.0, "completion": 0.0},
 }
 

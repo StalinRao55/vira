@@ -4,6 +4,7 @@ domain/repositories/password_reset_repository.py
 Interface for password reset token storage.
 """
 
+from abc import ABC, abstractmethod
 from datetime import datetime
 from uuid import UUID
 

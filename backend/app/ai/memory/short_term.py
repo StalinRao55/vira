@@ -73,7 +73,7 @@ class ShortTermMemoryManager:
             chunks = [
                 chunk.text
                 async for chunk in self._llm_provider.stream_completion(
-                    messages=[ChatTurn(role="user", content=prompt)], model="gemini-3-flash", temperature=0.2
+                    messages=[ChatTurn(role="user", content=prompt)], model="gemini-2.0-flash", temperature=0.2
                 )
             ]
             return "".join(chunks).strip()

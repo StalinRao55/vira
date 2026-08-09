@@ -48,7 +48,7 @@ class RunAgentPipelineUseCase:
         self._coordinator = coordinator
 
     async def execute(
-        self, user_id: UUID, conversation_id: UUID, content: str, model: str = "gemini-3-flash"
+        self, user_id: UUID, conversation_id: UUID, content: str, model: str = "gemini-2.0-flash"
     ) -> AsyncIterator[AgentStreamEvent]:
         conversation = await self._conversation_repository.get_by_id(conversation_id)
         if conversation is None:

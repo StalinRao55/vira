@@ -48,5 +48,5 @@ class MessageResponse(BaseModel):
 
 class SendMessageRequest(BaseModel):
     content: str = Field(min_length=1, max_length=32_000)
-    model: str = "gemini-3-flash"
+    model: str = "gemini-2.0-flash"
     document_ids: list[UUID] = Field(default_factory=list)

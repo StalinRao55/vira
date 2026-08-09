@@ -53,7 +53,7 @@ class CoordinatorAgent(IAgent):
         raise NotImplementedError("CoordinatorAgent orchestrates a stream — use run_pipeline() instead")
 
     async def run_pipeline(
-        self, context: AgentContext, model: str = "gemini-3-flash"
+        self, context: AgentContext, model: str = "gemini-2.0-flash"
     ) -> AsyncIterator[tuple[AgentResult | None, StreamChunk | None]]:
         """Yields (AgentResult, None) for each completed planning/gathering
         step, then (None, StreamChunk) for each piece of the final

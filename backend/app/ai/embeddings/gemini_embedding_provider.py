@@ -14,8 +14,9 @@ import httpx
 
 from app.ai.embeddings.base import IEmbeddingProvider
 
-_EMBED_URL = "https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent"
-_BATCH_EMBED_URL = "https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents"
+_EMBED_MODEL = "gemini-embedding-001"
+_EMBED_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_EMBED_MODEL}:embedContent"
+_BATCH_EMBED_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_EMBED_MODEL}:batchEmbedContents"
 
 
 class GeminiEmbeddingProvider(IEmbeddingProvider):
@@ -26,21 +27,24 @@ class GeminiEmbeddingProvider(IEmbeddingProvider):
 
     @property
     def dimensions(self) -> int:
-        return 768  # text-embedding-004 output size
+        return 3072  # gemini-embedding-001 output size (this account returns 3072)
 
     async def embed(self, text: str) -> list[float]:
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await client.post(
                 _EMBED_URL,
                 params={"key": self._api_key},
-                json={"content": {"parts": [{"text": text}]}},
+                json={"model": f"models/{_EMBED_MODEL}", "content": {"parts": [{"text": text}]}},
             )
-            response.raise_for_status()
+            if response.status_code >= 400:
+                raise RuntimeError(
+                    f"Gemini embedding failed (HTTP {response.status_code}): {response.text}"
+                )
             return response.json()["embedding"]["values"]
 
     async def embed_batch(self, texts: list[str]) -> list[list[float]]:
         requests = [
-            {"model": "models/text-embedding-004", "content": {"parts": [{"text": t}]}} for t in texts
+            {"model": f"models/{_EMBED_MODEL}", "content": {"parts": [{"text": t}]}} for t in texts
         ]
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await client.post(
@@ -48,5 +52,8 @@ class GeminiEmbeddingProvider(IEmbeddingProvider):
                 params={"key": self._api_key},
                 json={"requests": requests},
             )
-            response.raise_for_status()
+            if response.status_code >= 400:
+                raise RuntimeError(
+                    f"Gemini batch embedding failed (HTTP {response.status_code}): {response.text}"
+                )
             return [e["values"] for e in response.json()["embeddings"]]
